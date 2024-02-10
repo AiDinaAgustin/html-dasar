@@ -142,6 +142,11 @@ body {
     header.navbar-container {
       flex-direction: column;
     }
+
+    header.navbar-container .nav-list ul {
+        flex-wrap: wrap;
+        column-gap: 0.5rem;
+      }
   }
   
   
