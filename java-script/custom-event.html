@@ -36,6 +36,10 @@
         const caption = document.getElementById('caption');
         caption.innerText = 'Anda telah membangkitkan custom event';
         }
+
+        tombol.addEventListener('click', function () {
+        tombol.dispatchEvent(changeCaption);
+        });
     </script>
   </body>
 </html>
