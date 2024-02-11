@@ -24,6 +24,16 @@
         const ol = document.getElementById('daftar');
         //gunakan method appendChild untuk merubah 
         ol.appendChild(newElement);
+
+        // kita akan menambah element baru <li> didalam olawal yang berisi nyalakan kompor dengan inserBefore
+        const elementAwal = document.createElement('li');
+        // masukan konten teks nyalakan kompor dengan menggunakan innerText
+        elementAwal.innerText = 'Hidupkan Kompor';
+        // mendapatkan parent elemen dari semua elemement li yakni ol
+        // Pada elemen <ol>, kita melihat bahwa child element pertama memiliki atribut id dengan nilai "awal". Untuk menyisipkan elemen baru pada posisi awal, kita perlu mengangkat elemen yang memiliki atribut id dengan value "awal".
+        const olawal = document.getElementById('awal');
+        // gunakan method insertBefore pada variable ol 
+        ol.insertBefore(elementAwal, olawal);
     </script>
 </body>
 </html>
