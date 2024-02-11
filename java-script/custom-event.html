@@ -24,7 +24,14 @@
     </div>
     <script>
         const changeCaption = new Event('changeCaption');
+        
+        window.addEventListener('load', function() {
+        const tombol = document.getElementById('tombol');
+        tombol.addEventListener('changeCaption', customEventHandler);
+        tombol.addEventListener('click', function() {});
+        });
 
+        
     </script>
   </body>
 </html>
