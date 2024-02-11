@@ -33,8 +33,6 @@
             contents.removeAttribute('hidden');
         }
 
-        document.body.onload = welcome;
-
         function increment(){
             document.getElementById('count').innerText++;
 
@@ -49,12 +47,8 @@
         }
 
         document.getElementById('incrementButton').onclick = increment;
+        document.body.onload = welcome;
 
-        function turun(){
-            document.getElementById('counts').innerText--;
-        }
-
-        document.getElementById('Button').onclick = turun;
     </script>
 </body>
 </html>
