@@ -24,9 +24,6 @@
     <div class="contents" align="center" hidden>
         <button id="incrementButton">Tekan Aku :)</button>
         <h3>Kamu sudah menekan tombol di atas sebanyak <span id="count">0</span></h3>
-
-        <button id="Button">Jangan Tekan Aku :)</button>
-        <h3>Kamu sudah menekan tombol di atas sebanyak <span id="counts">0</span></h3>
     </div>
     
     <script>
@@ -40,6 +37,15 @@
 
         function increment(){
             document.getElementById('count').innerText++;
+
+            if(document.getElementById('count').innerText == 10){
+                const hiddenMessage = document.createElement('h4');
+                hiddenMessage.innerText = ' Selamat tutu';
+                const image = document.createElement('img');
+                image.setAttribute('src', 'img/sukabumi.jpg');
+                const contents  = document.querySelector('.contents');
+                contents.appendChild(hiddenMessage).appendChild(image);
+            }
         }
 
         document.getElementById('incrementButton').onclick = increment;
