@@ -50,5 +50,14 @@
           <li><a href="http://www.google.com" id="googleLink">Google</a></li>
         </ul>
       </div>
+
+      <script>
+        // disini kita akan memanipulasi style dengan menambahkan border-radius 6px
+        // panggil dulu semua button 
+        const buttons = document.querySelectorAll('.button');
+        for (const button of buttons){
+            button.children[0].style.borderRadius = '6px';
+        }
+      </script>
 </body>
 </html>

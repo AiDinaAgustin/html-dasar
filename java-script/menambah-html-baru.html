@@ -12,5 +12,18 @@
       <li id="akhir">Matikan kompor.</li>
     </ol>
     <hr size="2" width="95%" color="black">
+
+
+    <script>
+        // kita akan menambah element baru <li> didalam oldiakhir yang berisi selamat menikmati
+        // buat element baru li dengan createElement()
+        const newElement = document.createElement('li');
+        // masukan konten teks selamat menikmati dengan menggunakan innerText
+        newElement.innerText = 'Selamat menikmati';
+        // ambil element ol dengan id daftar
+        const ol = document.getElementById('daftar');
+        //gunakan method appendChild untuk merubah 
+        ol.appendChild(newElement);
+    </script>
 </body>
 </html>
