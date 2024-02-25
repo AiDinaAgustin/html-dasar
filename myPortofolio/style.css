@@ -160,4 +160,21 @@ span{
     background-color: var(--main-color);
 }
 
+.btn{
+    display: inline-flex;
+    padding: 1rem 2.8rem;
+    background: var(--main-color);
+    border-radius: 4rem;
+    font-size: 1.6rem;
+    color: white;
+    border: 2px solid transparent;
+    letter-spacing: 0.1rem;
+    font-weight: 600;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
 
+.btn:hover{
+    box-shadow: 0 0 25px var(--main-color);
+    transform: scale(1)translateY(-5px);
+}
