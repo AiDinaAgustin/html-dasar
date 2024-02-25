@@ -192,7 +192,7 @@ span{
 .text-animation span::before{
     content: 'Web Developer';
     color: var(--main-color);
-    animation: word 20s infinite;
+    animation: words 20s infinite;
 }
 
 .text-animation span::after{
@@ -232,6 +232,32 @@ span{
     81%,
     100%{
         content: "Content Creator";
+    }
+}
+
+@keyframes typing{
+    10%,
+    15%,
+    30%,
+    35%,
+    50%,
+    55%,
+    70%,
+    75%,
+    90%,
+    95%{
+        width: 0;
+    }
+    5%,
+    20%,
+    25%,
+    40%,
+    45%,
+    60%,
+    65%,
+    80%,
+    85%{
+        width: calc(100% + 8px);
     }
 }
 
