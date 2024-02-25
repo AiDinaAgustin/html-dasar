@@ -109,7 +109,7 @@ span{
 .home-content h1{
     font-size: 7rem;
     font-weight: 700;
-    margin-top: 2.5rem;
+    margin-top: 1.5rem;
     line-height: 1;
 }
 
@@ -126,5 +126,10 @@ span{
     transition: 0.4s ease-in-out;
 }
 
+
+.home-img img:hover{
+    box-shadow: 0 0 50px var(--main-color),
+                0 0 50px var(--main-color);
+}
 
 
